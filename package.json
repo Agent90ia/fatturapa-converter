@@ -1,0 +1,10 @@
+{
+  "name": "fatturapa-converter",
+  "version": "1.0.0",
+  "description": "Convertire fattura elettronica XML, P7M e ZIP in Excel/CSV (FatturaPA), senza dipendenze di rete",
+  "license": "MIT",
+  "bin": { "fpa2xlsx": "bin/fpa2xlsx.js" },
+  "scripts": { "test": "node test/test_fpa.js && node test/test_viewer.js" },
+  "keywords": ["fatturapa", "fattura-elettronica", "xml", "excel", "p7m"],
+  "homepage": "https://rinveta.com/fattura-elettronica-xml-excel/?c=gh-fpa"
+}
