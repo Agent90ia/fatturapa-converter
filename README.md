@@ -33,6 +33,10 @@ Limite predefinito: 20 file per elaborazione (`MAX_FILES` in `src/fpa-core.js`).
 ## Server MCP (Claude Desktop, Cursor)
 La cartella [`mcp/`](mcp/) contiene un server MCP che legge fatture XML/P7M/ZIP e le restituisce come JSON o CSV ai client compatibili. Installazione e configurazione in [`mcp/README.md`](mcp/README.md).
 
+## Dopo la conversione: unire e deduplicare in blocco, via API
+
+Se dopo aver convertito le fatture hai molti CSV/Excel da unire o ripulire dai duplicati, o immagini da convertire in blocco (WebP, AVIF, JPEG, PNG), puoi usare due Actor su Apify (gli Actor girano sui server di Apify; da API o da pianificazione): [Dataset Merge, Dedupe & Transform](https://apify.com/rinveta/dataset-merge-dedupe) e [Image Compressor & Converter](https://apify.com/rinveta/image-converter). Sono prodotti Rinveta, gli stessi autori di questo repository; per un file singolo restano gratuiti gli strumenti nel browser su [rinveta.com](https://rinveta.com/remove-duplicates-csv-excel/).
+
 ## Test
 ```bash
 npm test      # oppure: node test/test_fpa.js && node test/test_viewer.js
