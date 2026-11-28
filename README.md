@@ -30,6 +30,9 @@ const csv = F.toCsv(r.head);
 ```
 Limite predefinito: 20 file per elaborazione (`MAX_FILES` in `src/fpa-core.js`).
 
+## Server MCP (Claude Desktop, Cursor)
+La cartella [`mcp/`](mcp/) contiene un server MCP che legge fatture XML/P7M/ZIP e le restituisce come JSON o CSV ai client compatibili. Installazione e configurazione in [`mcp/README.md`](mcp/README.md).
+
 ## Test
 ```bash
 npm test      # oppure: node test/test_fpa.js && node test/test_viewer.js

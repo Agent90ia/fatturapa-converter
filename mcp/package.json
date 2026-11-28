@@ -1,0 +1,12 @@
+{
+  "name": "fatturapa-mcp",
+  "version": "1.0.0",
+  "description": "Server MCP (stdio) per leggere fatture elettroniche FatturaPA XML/P7M/ZIP: JSON e CSV, in locale",
+  "license": "MIT",
+  "main": "server.js",
+  "bin": { "fatturapa-mcp": "server.js" },
+  "scripts": { "test": "node test/test_mcp.js" },
+  "dependencies": { "@modelcontextprotocol/sdk": "^1.12.0", "zod": "^3.23.8" },
+  "keywords": ["mcp", "model-context-protocol", "fatturapa", "fattura-elettronica", "xml", "p7m"],
+  "homepage": "https://rinveta.com/fattura-elettronica-xml-excel/?c=mcp-fpa"
+}
